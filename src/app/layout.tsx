@@ -1,10 +1,21 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Noto_Sans_JP } from "next/font/google";
 import "./globals.css";
 import Navigation from "@/components/ui/Navigation";
 import { ThemeProvider } from "next-themes";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-inter",
+});
+
+const notoSansJP = Noto_Sans_JP({
+  subsets: ["latin"],
+  weight: ["400", "500", "700"],
+  display: "swap",
+  variable: "--font-noto-sans",
+});
 
 export const metadata: Metadata = {
   title: "Portfolio | Web Frontend Engineer",
@@ -18,10 +29,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="ja" suppressHydrationWarning>
-      <body
-        className={`${inter.className} bg-white text-gray-800 dark:bg-gray-900 dark:text-gray-100`}
-      >
+    <html lang="ja" className={`${inter.variable} ${notoSansJP.variable}`}>
+      <body className="font-sans bg-white text-gray-900 dark:bg-gray-900 dark:text-gray-100 antialiased">
         <ThemeProvider
           attribute="class"
           defaultTheme="light"

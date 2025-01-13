@@ -14,7 +14,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="text-7xl md:text-8xl xl:text-9xl font-bold tracking-tighter bg-gradient-to-r from-gray-900 via-gray-800 to-gray-700 dark:from-gray-100 dark:via-gray-200 dark:to-gray-300 text-transparent bg-clip-text"
+            className="font-display text-7xl md:text-8xl xl:text-9xl font-bold tracking-tight bg-gradient-to-r from-gray-900 via-gray-800 to-gray-700 dark:from-gray-100 dark:via-gray-200 dark:to-gray-300 text-transparent bg-clip-text"
           >
             Frontend
             <br />
@@ -24,7 +24,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="mt-8 text-xl md:text-2xl text-gray-600 dark:text-gray-400 tracking-wide"
+            className="mt-8 text-xl md:text-2xl text-gray-600 dark:text-gray-400 leading-relaxed tracking-wide"
           >
             モダンなWeb開発技術を活用し、
             <br className="md:hidden" />
@@ -38,7 +38,7 @@ export default function Hero() {
           >
             <Link
               href="/contact"
-              className="px-8 py-4 border-2 border-gray-900 dark:border-gray-100 text-gray-900 dark:text-gray-100 hover:bg-gray-900 hover:text-white dark:hover:bg-gray-100 dark:hover:text-gray-900 transition-all text-lg tracking-wider"
+              className="px-8 py-4 border-2 border-gray-900 dark:border-gray-100 text-gray-900 dark:text-gray-100 hover:bg-gray-900 hover:text-white dark:hover:bg-gray-100 dark:hover:text-gray-900 transition-all text-lg tracking-wider font-medium"
             >
               お問い合わせ
             </Link>
@@ -46,7 +46,7 @@ export default function Hero() {
               href="https://github.com/yourusername"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-8 py-4 border-2 border-gray-500 dark:border-gray-400 text-gray-500 dark:text-gray-400 hover:border-gray-900 hover:text-gray-900 dark:hover:border-gray-100 dark:hover:text-gray-100 transition-all text-lg tracking-wider"
+              className="px-8 py-4 border-2 border-gray-500 dark:border-gray-400 text-gray-500 dark:text-gray-400 hover:border-gray-900 hover:text-gray-900 dark:hover:border-gray-100 dark:hover:text-gray-100 transition-all text-lg tracking-wider font-medium"
             >
               GitHub
             </a>

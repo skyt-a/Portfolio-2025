@@ -29,8 +29,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="ja" className={`${inter.variable} ${notoSansJP.variable}`}>
-      <body className="font-sans bg-white text-gray-900 dark:bg-gray-900 dark:text-gray-100 antialiased">
+    <html
+      lang="ja"
+      suppressHydrationWarning
+      className={`${inter.variable} ${notoSansJP.variable}`}
+    >
+      <body className="font-sans bg-white text-gray-800 dark:bg-gray-900 dark:text-gray-100 antialiased">
         <ThemeProvider
           attribute="class"
           defaultTheme="light"

@@ -16,19 +16,21 @@ export default function Hero() {
             transition={{ duration: 0.8 }}
             className="font-display text-7xl md:text-8xl xl:text-9xl font-bold tracking-tight bg-gradient-to-r from-gray-900 via-gray-800 to-gray-700 dark:from-gray-100 dark:via-gray-200 dark:to-gray-300 text-transparent bg-clip-text"
           >
-            Frontend
+            Crafting
             <br />
-            Engineer
+            Digital
+            <br />
+            Experiences
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="mt-8 text-xl md:text-2xl text-gray-600 dark:text-gray-400 leading-relaxed tracking-wide"
+            className="mt-8 text-xl md:text-2xl text-gray-600 dark:text-gray-400 leading-relaxed"
           >
-            モダンなWeb開発技術を活用し、
+            最新のテクノロジーと洗練されたデザインで、
             <br className="md:hidden" />
-            美しく機能的なフロントエンド開発に取り組んでいます
+            期待を超えるWebエクスペリエンスを創造します
           </motion.p>
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -43,7 +45,7 @@ export default function Hero() {
               お問い合わせ
             </Link>
             <a
-              href="https://github.com/yourusername"
+              href="https://github.com/skyt-a"
               target="_blank"
               rel="noopener noreferrer"
               className="px-8 py-4 border-2 border-gray-500 dark:border-gray-400 text-gray-500 dark:text-gray-400 hover:border-gray-900 hover:text-gray-900 dark:hover:border-gray-100 dark:hover:text-gray-100 transition-all text-lg tracking-wider font-medium"

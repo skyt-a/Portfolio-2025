@@ -19,7 +19,7 @@ const links = [
   },
   {
     title: "Katacky",
-    url: "https://katacky.com",
+    url: "https://katacky.xyz",
     description: "個人開発したWebアプリケーションを公開しています。",
     icon: "💻",
   },
